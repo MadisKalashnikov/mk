@@ -46,7 +46,7 @@ export default function Page() {
             <ul className="flex flex-col gap-4 text-lg font-semibold">
               <li className="flex items-center gap-4"><span className="flex size-11 items-center justify-center rounded-xl bg-background text-primary"><Phone aria-hidden="true" /></span>+372 5000 0000</li>
               <li className="flex items-center gap-4"><span className="flex size-11 items-center justify-center rounded-xl bg-background text-primary"><Mail aria-hidden="true" /></span>info@tuleohutusekspert.ee</li>
-              <li className="flex items-center gap-4"><span className="flex size-11 items-center justify-center rounded-xl bg-background text-primary"><MapPin aria-hidden="true" /></span>Teenindame kogu Eestit</li>
+              <li className="flex items-center gap-4"><span className="flex size-11 items-center justify-center rounded-xl bg-background text-primary"><MapPin aria-hidden="true" /></span>Teenindame üle kogu Eesti</li>
             </ul>
           </div>
           <QuoteForm />
