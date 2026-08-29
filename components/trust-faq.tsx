@@ -32,7 +32,7 @@ export function TrustSection() {
 
 export function FaqSection() {
   return (
-    <section id="kkk" className="scroll-mt-24 py-20 sm:py-28">
+    <section id="kkk" data-scroll-section="faq" className="scroll-mt-24 py-20 sm:py-28">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-4 text-center">
           <p className="text-sm font-bold uppercase tracking-widest text-primary">Korduma kippuvad küsimused</p>

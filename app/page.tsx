@@ -7,7 +7,7 @@ import { TrustSection, FaqSection } from '@/components/trust-faq'
 
 export default function Page() {
   return (
-    <div id="avaleht" className="min-h-screen bg-background text-foreground">
+    <div id="avaleht" data-scroll-section="home" className="min-h-screen bg-background text-foreground">
       <SiteHeader />
 
       <section className="relative overflow-hidden border-b">
@@ -36,7 +36,7 @@ export default function Page() {
       <DocumentsSection />
       <FaqSection />
 
-      <section id="kontakt" className="scroll-mt-24 bg-secondary py-20 sm:py-28">
+      <section id="kontakt" data-scroll-section="contact" className="scroll-mt-24 bg-secondary py-20 sm:py-28">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <div className="flex flex-col justify-center gap-8">
             <div>
