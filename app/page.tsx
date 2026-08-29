@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button'
 import { SiteHeader } from '@/components/site-header'
 import { QuoteForm } from '@/components/quote-form'
 import { ServicesSection, ProcessAndPricing, DocumentsSection } from '@/components/service-sections'
-import { TrustSection, FaqSection } from '@/components/trust-faq'
+import { FaqSection } from '@/components/trust-faq'
 
 export default function Page() {
   return (
@@ -30,7 +30,6 @@ export default function Page() {
         </div>
       </section>
 
-      <TrustSection />
       <ServicesSection />
       <ProcessAndPricing />
       <DocumentsSection />
@@ -42,7 +41,7 @@ export default function Page() {
             <div>
               <p className="text-sm font-bold uppercase tracking-widest text-primary">Võta ühendust</p>
               <h2 className="mt-4 text-balance text-3xl font-bold sm:text-5xl">Räägime sinu objekti tuleohutusest</h2>
-              <p className="mt-5 max-w-lg leading-relaxed text-muted-foreground">Kirjelda lühidalt vajadust ja võtame ühendust. Allolevad kontaktandmed on demoversiooni näidised.</p>
+              <p className="mt-5 max-w-lg leading-relaxed text-muted-foreground">Kirjelda lühidalt vajadust ja võtame ühendust.</p>
             </div>
             <ul className="flex flex-col gap-4 text-lg font-semibold">
               <li className="flex items-center gap-4"><span className="flex size-11 items-center justify-center rounded-xl bg-background text-primary"><Phone aria-hidden="true" /></span>+372 5000 0000</li>
@@ -54,10 +53,9 @@ export default function Page() {
         </div>
       </section>
 
-      <footer className="border-t py-10">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 text-sm text-muted-foreground sm:flex-row sm:px-6 lg:px-8">
+      <footer className="border-t py-10 text-center">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 px-4 text-left text-sm text-muted-foreground sm:px-6 lg:px-8">
           <p>© {new Date().getFullYear()} Tuleohutus Ekspert OÜ. Kõik õigused kaitstud.</p>
-          <p>Näidisveebileht — kontaktandmed on asendatavad.</p>
         </div>
       </footer>
     </div>

@@ -22,7 +22,7 @@ export function QuoteForm() {
     <form className="rounded-2xl bg-card p-6 shadow-xl shadow-foreground/5 sm:p-8" onSubmit={(event) => { event.preventDefault(); setSent(true) }}>
       <div className="flex flex-col gap-6">
         <div>
-          <p className="text-sm font-bold uppercase tracking-widest text-primary">Tasuta hinnapäring</p>
+          <p className="text-sm font-bold uppercase tracking-widest text-primary">hinnapäring</p>
           <h3 className="mt-2 text-2xl font-bold">Kirjelda oma vajadust</h3>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Vastame esimesel võimalusel ja täpsustame töö mahu.</p>
         </div>
@@ -33,8 +33,7 @@ export function QuoteForm() {
         <label className="flex flex-col gap-2 text-sm font-semibold">E-post<input required name="email" autoComplete="email" type="email" className="h-11 rounded-lg border bg-background px-3 font-normal outline-none focus:ring-2 focus:ring-ring" placeholder="nimi@ettevote.ee" /></label>
         <label className="flex flex-col gap-2 text-sm font-semibold">Teenus<select required name="service" defaultValue="" className="h-11 rounded-lg border bg-background px-3 font-normal outline-none focus:ring-2 focus:ring-ring"><option value="" disabled>Vali teenus</option><option>Tuleohutusülevaatus</option><option>Dokumentatsiooni koostamine</option><option>Evakuatsiooniõppus või koolitus</option><option>Tulekustutite kontroll</option><option>Muu nõustamine</option></select></label>
         <label className="flex flex-col gap-2 text-sm font-semibold">Objekt ja soov<textarea required name="message" rows={4} className="rounded-lg border bg-background px-3 py-3 font-normal outline-none focus:ring-2 focus:ring-ring" placeholder="Objekti tüüp, asukoht ja soovitud töö..." /></label>
-        <Button type="submit" size="lg" className="h-12">Saada näidispäring <ArrowRight data-icon="inline-end" aria-hidden="true" /></Button>
-        <p className="text-xs leading-relaxed text-muted-foreground">Näidisvorm — andmeid ei salvestata ega saadeta. Päris kontaktkanal ühendatakse enne avalikustamist.</p>
+        <Button type="submit" size="lg" className="h-12">Saada päring <ArrowRight data-icon="inline-end" aria-hidden="true" /></Button>
       </div>
     </form>
   )
