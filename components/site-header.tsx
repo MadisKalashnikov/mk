@@ -1,7 +1,7 @@
 'use client'
 
 import type { MouseEvent } from 'react'
-import { Flame, Phone } from 'lucide-react'
+import { Flame } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 const navigation = [
@@ -39,7 +39,6 @@ export function SiteHeader() {
           ))}
         </nav>
         <Button render={<a href="/" onClick={(event) => scrollToSection(event, 'contact')} />} size="lg">
-          <Phone data-icon="inline-start" aria-hidden="true" />
           Küsi pakkumist
         </Button>
       </div>
